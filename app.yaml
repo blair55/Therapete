@@ -1,0 +1,54 @@
+application: therapete
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /favicon.ico
+  static_files: favicon.ico
+  upload: favicon.ico
+
+- url: /sitemap
+  static_files: sitemap.xml
+  upload: sitemap.xml
+
+- url: /contact-us
+  static_files: contact-us.html
+  upload: contact-us.html
+
+- url: /rates
+  static_files: rates.html
+  upload: rates.html
+
+- url: /about-us
+  static_files: about-us.html
+  upload: about-us.html
+
+- url: /swedish-massage
+  static_files: swedish-massage.html
+  upload: swedish-massage.html
+
+- url: /deep-tissue-massage
+  static_files: deep-tissue-massage.html
+  upload: deep-tissue-massage.html
+
+- url: /indian-head-massage
+  static_files: indian-head-massage.html
+  upload: indian-head-massage.html
+
+- url: /on-site-massage
+  static_files: on-site-massage.html
+  upload: on-site-massage.html
+
+- url: /therapies
+  static_files: therapies.html
+  upload: therapies.html
+
+- url: /images
+  static_dir: images
+
+- url: /style
+  static_dir: style
+
+- url: /.*
+  script: therapete.py

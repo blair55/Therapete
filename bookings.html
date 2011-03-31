@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-2" />
+    <title>Therapete - Bookings</title>
+    <link href="../style/therapete.css" media="screen" rel="Stylesheet" type="text/css" />
+</head>
+<body>
+<table>
+<tr>
+<td>
+<div id="content" class="bookings">
+    <div class="logo">
+        <h1>
+             <span>Therapete</span>
+        </h1>
+    </div>
+    <div class="nav">
+         <ul>
+            <li><a href="/">Home</a></li>
+            <li>
+                <a href="/therapies">Therapies</a>
+                <ul>
+                    <li><a href="/on-site-massage">On Site Massage</a></li>
+                    <li><a href="/indian-head-massage">Indian Head Massage</a></li>
+                    <li><a href="/deep-tissue-massage">Deep Tissue Massage</a></li>
+                    <li><a href="/swedish-massage">Swedish Massage</a></li>
+                </ul>
+            </li>
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="/rates">Rates</a></li>
+            <li class="selected"><a href="/bookings">Bookings</a></li>
+            <li><a href="/contact-us">Contact Us</a></li>
+        </ul>
+        <a href="/rates" class="back">Back</a>
+        <a href="/contact-us" class="back">Next</a>
+    </div>
+    <div class="main">
+        <div class="copy">
+            <h2>Bookings</h2>
+            <p>To make a booking or enquiry, or your chance to win a free taster massage fill out the form below</p>
+            <form action="/booking-sent" method="post">
+                  {{ error }}
+                  <div>
+                       <label for="name">Name or Company</label>
+                       <input type="text" name="name" />
+                  </div>
+                  <div>
+                       <label>Contact Phone</label>
+                       <input type="text" name="phone" />
+                  </div>
+                  <div>
+                       <label>Contact Email</label>
+                       <input type="text" name="email" />
+                  </div>
+                  <div>
+                       <label>Message</label>
+                       <textarea name="message"></textarea>
+                  </div>
+                  <div>
+                       <label>Therapy</label>
+                       <select name="therapy">
+                               <option>Please Select</option>
+                               <option>On Site Massage</option>
+                               <option>Indian Head Massage</option>
+                               <option>Deep Tissue Massage</option>
+                               <option>Swedish Massage</option>
+                               <option>Multiple</option>
+                      </select>
+                  </div>
+                  <div>
+                       <label>Booking Type</label>
+                       <select name="booking">
+                               <option>Please Select</option>
+                               <option>Office</option>
+                               <option>Home</option>
+                               <option>Festival</option>
+                               <option>Party</option>
+                               <option>Other</option>
+                      </select>
+                  </div>
+                  <div>
+                       <label>Number of People</label>
+                       <select name="people">
+                               <option>Please Select</option>
+                               <option>1</option>
+                               <option>2-4</option>
+                               <option>4-12</option>
+                               <option>12+</option>
+                      </select>
+                  </div>
+                  <div class="submit">
+                       <input type="submit" value="Submit" />
+                  <div>
+            </form>
+        </div>
+    </div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
